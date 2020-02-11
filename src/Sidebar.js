@@ -4,7 +4,7 @@ import { NavLink } from "react-router-dom";
 // Logo
 import logo from "./assets/theindex.svg";
 
-function Sidebar() {
+const Sidebar = () => {
   return (
     <div id="sidebar">
       <img src={logo} className="logo" alt="the index logo" />
@@ -15,6 +15,6 @@ function Sidebar() {
       </section>
     </div>
   );
-}
+};
 
 export default Sidebar;

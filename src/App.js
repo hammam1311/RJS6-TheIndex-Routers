@@ -5,7 +5,7 @@ import axios from "axios";
 // Components
 import Sidebar from "./Sidebar";
 import Loading from "./Loading";
-import AuthorsList from "./AuthorsList";
+import AuthorList from "./AuthorList";
 import AuthorDetail from "./AuthorDetail";
 
 const instance = axios.create({
@@ -46,7 +46,7 @@ class App extends Component {
           <Route
             path="/authors/"
             render={props => (
-              <AuthorsList {...props} authors={this.state.authors} />
+              <AuthorList {...props} authors={this.state.authors} />
             )}
           />
         </Switch>

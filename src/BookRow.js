@@ -1,6 +1,6 @@
 import React from "react";
 
-function BookRow(props) {
+const BookRow = props => {
   const book = props.book;
   const authors = book.authors.map(author => (
     <div key={author.id}>{author.name}</div>
@@ -14,6 +14,6 @@ function BookRow(props) {
       </td>
     </tr>
   );
-}
+};
 
 export default BookRow;
