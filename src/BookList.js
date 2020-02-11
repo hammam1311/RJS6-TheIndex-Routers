@@ -32,7 +32,7 @@ class BookList extends Component {
     return (
       <div>
         <h3>Books</h3>
-        <SearchBar onChange={this.filterBooks} />
+        <SearchBar handleFilter={this.filterBooks} />
         <BookTable books={books} />
       </div>
     );
