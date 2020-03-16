@@ -10,7 +10,9 @@ module.exports = {
       });
     } else if (url.startsWith("/api/books")) {
       return Promise.resolve({
-        data: Array.from({ length: 10 }, fakeBook)
+        data: Array.from({ length: 10 }, (_, idx) =>
+          fakeBook(idx % 2 ? { color: "puce" } : {})
+        )
       });
     }
   }),

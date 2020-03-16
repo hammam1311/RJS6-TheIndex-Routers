@@ -2,7 +2,7 @@ import casual from "casual";
 
 casual.seed(555);
 
-export const fakeId = () => casual.integer(0, 30);
+export const fakeId = () => Math.floor(Math.random() * 30);
 
 export const fakeBook = overrides => ({
   id: fakeId(),

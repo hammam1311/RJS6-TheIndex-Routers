@@ -10,7 +10,12 @@ const SearchBar = props => {
   return (
     <div className="form-group col-lg-6 col-12 mx-auto">
       <div className="input-group my-3">
-        <input className="form-control" type="text" onChange={handleChange} />
+        <input
+          className="form-control"
+          name="search"
+          type="text"
+          onChange={handleChange}
+        />
         <div className="input-group-append">
           <span className="input-group-text">
             <FontAwesomeIcon icon={faSearch} />
